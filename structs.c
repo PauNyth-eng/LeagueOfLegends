@@ -87,6 +87,7 @@ int getPlayersMmr(int id, PLAYER * players, int countOfPlayers)
             return players[i].mmr;
         }
     }
+    return 0;
 }
 /**
  * @brief Function: setNewMmr -> Will set new mmr to the selected player

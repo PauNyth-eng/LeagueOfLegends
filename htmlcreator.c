@@ -1,7 +1,12 @@
 #include "structs.h"
 #include "htmlcreator.h"
 
-
+/**
+ * @brief Function: getDivision -> getting division of player compare to his MMR
+ * 
+ * @param player -> PLAYER - player
+ * @return char* -> String - name of dividision
+ */
 char* getDivision(PLAYER player)
 {
     if(player.mmr >= 0 && player.mmr <= 1149)
@@ -14,6 +19,14 @@ char* getDivision(PLAYER player)
                         return "Platinum";
                         else return "Diamond";
 }
+
+/**
+ * @brief Function: createHtml -> Will create HTML file and write
+ * 
+ * @param filename -> String - name of output file
+ * @param players -> PLAYER* - list of players
+ * @param countOfPlayers -> Int - count of players
+ */
 void createHtml(char * filename, PLAYER * players, int countOfPlayers)
 {
     FILE * file = fopen(filename, "w+");
@@ -34,4 +47,5 @@ void createHtml(char * filename, PLAYER * players, int countOfPlayers)
         fprintf(file, "</tr>\n");
     }
     fprintf(file, "</tbody>\n</table>\n</body>\n</html>\n");
+    fclose(file);
 }

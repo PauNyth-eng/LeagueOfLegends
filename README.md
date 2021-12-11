@@ -6,6 +6,6 @@
     cd Folder_with_files
     cmake CMakeLists.txt
     make
-    ./lolEloRating matches.txt players.txt output.html
+    ./lolEloRating matches.txt players.txt output.
 
   Output is only HTML file (Do not try anything else)
