@@ -1,7 +1,12 @@
 #pragma once
-#include <stdlib.h>
 #include <stdio.h>
+#include <malloc.h>
+#include <stdlib.h>
 #include <string.h>
+#include <math.h>
+#include <stdbool.h>
+#define K 30
+
 
 typedef enum
 {
@@ -41,5 +46,12 @@ typedef struct
 void freePlayers(PLAYER * players);
 
 void freeMatches(MATCH * matches);
+void  initPlayers(char * filename, PLAYER * players, int countOfPlayers);
+PLAYER getPlayer(int id, PLAYER * players, int countOfPlayers);
+int getPlayersMmr(int id, PLAYER * players, int countOfPlayers);
+int countTeamMmr(PLAYER * players);
 
-int  initPlayers(char * filename, PLAYER * players, int countOfPlayers);
+
+void countPlayerMmr(int enemyMmr, int countOfPlayers, int id, PLAYER * players, bool winner);
+void setPlayerMatch(int countOfPlayers, int id, PLAYER * players, bool winner, KDA kda);
+void setAll(char * filename, int countOfMatches, PLAYER * players, int countOfPlayers);

@@ -1,10 +1,8 @@
 1,darksider
 2,yasuo4life
-3,Hello
+3,player3
 4,heimerdanger
-5,Bye
-9,PauNyth
-8,Moelord
-13,ByeBye
-22,MetisCZ
-10,Kundros
+5,player5
+
+6,player6
+7,Justin307
