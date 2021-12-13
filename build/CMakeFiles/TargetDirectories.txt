@@ -1,3 +1,0 @@
-/home/paunyth/Documents/LeagueOfLegends/build/CMakeFiles/lolEloRating.dir
-/home/paunyth/Documents/LeagueOfLegends/build/CMakeFiles/edit_cache.dir
-/home/paunyth/Documents/LeagueOfLegends/build/CMakeFiles/rebuild_cache.dir
