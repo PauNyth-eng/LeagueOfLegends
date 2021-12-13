@@ -1,0 +1,1 @@
+/usr/bin/cc  -fsanitize=address -lm -rdynamic CMakeFiles/lolEloRating.dir/main.c.o CMakeFiles/lolEloRating.dir/file.c.o CMakeFiles/lolEloRating.dir/structs.c.o CMakeFiles/lolEloRating.dir/htmlcreator.c.o -o lolEloRating  -lm 
