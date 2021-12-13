@@ -11,4 +11,4 @@
   Output is only HTML file (Do not try anything else)
 
 # Link for Github
-  
+  https://github.com/PauNyth-eng/LeagueOfLegends
